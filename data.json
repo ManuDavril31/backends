@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "Manuel Martínez",
+    "email": "correo@corre.com",
+    "telefono": 777777777,
+    "asunto": "lorem, loresm, loresm, impsum",
+    "mensaje": "mensajes, lorem, loresimsum, imsun"
+  },
+  {
+    "nombre": "Nevis Polo",
+    "email": "correo2@corre.com",
+    "telefono": 6666666666,
+    "asunto": "lorem, loresm, loresm, impsum",
+    "mensaje": "mensajes, lorem, loresimsum, imsun"
+  },
+  {
+    "nombre": "Andrea Martinez",
+    "email": "correo3@corre.com",
+    "telefono": 5555555555,
+    "asunto": "lorem, loresm, loresm, impsum",
+    "mensaje": "mensajes, lorem, loresimsum, imsun"
+  }
+]

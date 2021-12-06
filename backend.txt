@@ -1,0 +1,27 @@
+npm init --yes
+
+crea un package.json con algunas configuraciones basicas 
+
+
+instarlar express: 
+npm install express
+
+
+Server basico 
+
+cons express =  require ('express');
+cons app = express();
+
+app.listen(3000, () => {
+	console.log('server on port 3000')
+})
+
+para ejecutar y abrir el puerto
+node src/index.js
+
+npm add expresss body-parser mongoose nodemon axios
+
+
+remover libreris de proyectos
+
+npm remove nombrelibreria
