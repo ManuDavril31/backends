@@ -1,8 +1,7 @@
 /** @format */
 
-import mongoose from "mongoose";
-
-const ticketsSchema = mongoose.Schema({
+const mongoose = require("mongoose");
+const TicketsSchema = mongoose.Schema({
   nombre: String,
   email: String,
   telefono: Number,
@@ -12,4 +11,4 @@ const ticketsSchema = mongoose.Schema({
 
 //mongoose.model() acepta dos parametros, el nombre del Schema y el Schema como tal, en este caso, ticketsSchema
 
-export default mongoose.model("tickets", ticketsSchema);
+module.exports = mongoose.model("Tickets", TicketsSchema);
