@@ -9,16 +9,6 @@ router.get("/", async (req, res) => {
   res.json(tickets);
 });
 
-// mascotaRoute.route("/agregar").post((req, res, next) => {
-//   MascotaModel.create(req.body, (error, data) => {
-//     if (error) {
-//       return next(error);
-//     } else {
-//       res.json(data);
-//     }
-//   });
-// });
-
 router.post("/", (req, res) => {
   console.log(req.body);
   Ticket.create(req.body, (err, data) => {
@@ -29,6 +19,19 @@ router.post("/", (req, res) => {
     }
   });
   // res.json("Recibido");
+});
+
+//OBTENER TICKET POR ID
+
+router.get("/:id", async (req, res) => {
+  Ticket.findById(req.params.id, (error, data) => {
+    if (error) {
+      console.log(error);
+    } else {
+      res.json(data);
+      console.log(data);
+    }
+  });
 });
 
 module.exports = router;
