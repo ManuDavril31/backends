@@ -7,6 +7,7 @@ const TicketsSchema = mongoose.Schema({
   telefono: Number,
   asunto: String,
   mensaje: String,
+  imagen: String,
 });
 
 //mongoose.model() acepta dos parametros, el nombre del Schema y el Schema como tal, en este caso, ticketsSchema
